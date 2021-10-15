@@ -10,23 +10,81 @@
     align-items: center;
 }
 
-.profile-container header .user{
-    font-size: 20px;
+.userMenu .btn-action{
+    margin-left: 10px;
+    list-style: none;
+    border: none;
+    background-color: rgb(26, 145, 80);
+    height: 100px;
+    width: 100px;
 }
 
-.profile-container header button{
-    margin-left: 10px;
-    border: 0;
-    background-color: white;
+.btn-action a{
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+    
 }
+
+.profile-container  .user{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(26, 145, 80);
+    height: 190px;
+    border-radius: 10px;
+}
+
+.user div{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+.user span{
+    font-size: 40px;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.user h1{
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.user .userIlustration{
+    height: 100%;
+    margin-left: 40px;
+}
+
 
 .profile-container header .user svg{
     width: 20px;
     height: 15px;
 }
 
-.courseContent{
+.perfil{
     text-align: center;
     font-size: 30px;
-    text-transform: uppercase;
+}
+
+
+
+.user-info {
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    margin: 32px auto;
+    justify-content: center;
+}
+
+.perfil .box-name{
+    background-color:rgb(26, 145, 80) ;
+    padding: 20px 30px;
+    color: white;
+    border-radius: 10px;    
+    margin-left: 10px;
+    align-items: center;
 }

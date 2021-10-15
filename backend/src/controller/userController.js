@@ -9,27 +9,21 @@ module.exports = {
     },
 
     async create (request, response){
-        const {name, email, password, team, tel} = request.body;
-        const text = 'Seja Bem Vindo a Ramo Academy.';
+        const {name, email, password} = request.body;
         const id = crypto.randomBytes(4).toString('hex');
 
         await connection('users').insert({
             id,
             name,
             email,
-            password,
-            team,
-            tel,
+            password
         })
 
         return response.json({
-            text,
             id,
             name,
             email,
-            password,
-            team,
-            tel,
+            password
         }
         )
     }
