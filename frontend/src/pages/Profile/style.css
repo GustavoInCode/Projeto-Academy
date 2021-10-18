@@ -10,29 +10,28 @@
     align-items: center;
 }
 
-.userMenu .btn-action{
+.btn-action {
+    text-decoration: none;
+    color:white;
     margin-left: 10px;
-    list-style: none;
     border: none;
     background-color: rgb(26, 145, 80);
     height: 100px;
     width: 100px;
+    text-align: center;
 }
 
-.btn-action a{
+.user a{
     text-decoration: none;
-    color:white;
-    padding: 10px;
-    border-radius: 10px;
-    
+    text-transform: uppercase;
+    color: white;
 }
 
 .profile-container  .user{
     display: flex;
-    padding: 10px;
     align-items: center;
     background-color: rgb(26, 145, 80);
-    height: 190px;
+    height: 100px;
     border-radius: 10px;
 }
 
@@ -40,51 +39,82 @@
     display: inline-block;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 .user span{
-    font-size: 40px;
+    font-size: 20px;
     text-transform: uppercase;
     justify-content: space-between;
 }
 
 .user h1{
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     text-transform: uppercase;
 }
 
 .user .userIlustration{
     height: 100%;
-    margin-left: 40px;
+    padding: 0 10px;
 }
 
-
-.profile-container header .user svg{
-    width: 20px;
-    height: 15px;
-}
 
 .perfil{
-    text-align: center;
+    margin-top: 20px;
     font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 82vh;
+    box-shadow: -6px 5px 20px 10px rgba(0, 0, 0, 0.2); 
 }
 
+.perfil h1 {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
 
-
-.user-info {
+.user-info{
+    
+    margin-top: 30px;
+    color: black;
     display: flex;
-    width: 100%;
-    padding: 0 30px;
-    margin: 32px auto;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.perfil .box-name{
-    background-color:rgb(26, 145, 80) ;
-    padding: 20px 30px;
-    color: white;
-    border-radius: 10px;    
-    margin-left: 10px;
-    align-items: center;
+.user-info img {
+    height: 600px;
 }
+
+.user-info p{
+    text-transform: uppercase;
+}
+
+.box-name {
+    margin-bottom: 50px;
+}
+
+.background-user img{
+    height: 100%;
+    width: 40vw;
+    margin-left: 100px;
+}
+
+.user-action {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(26, 145, 80);
+    border-radius: 10px;
+    color: white;
+}
+
+.user-action img{
+    width: 13%;
+}
+
+

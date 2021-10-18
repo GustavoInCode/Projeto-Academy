@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import logo from '../../assets/logo.png';
 import userIlustration from '../../assets/user-ilustration.png'
+import imgUserInfo from '../../assets/img-user-info.svg';
+import userActionimg from '../../assets/img-user-action.svg';
 import {FiLogOut} from 'react-icons/fi';
 
 export default function Profile (){
@@ -13,7 +15,12 @@ export default function Profile (){
             <header>
                 <div className="userMenu">
                 <img src={logo} alt="Logo"></img>
-                <button className="btn-action" type="button">
+                
+                </div>
+
+                <div className="user">
+                    
+                    <button className="btn-action" type="button">
                         <Link to="/course">
                            Cursos
                         </Link>
@@ -31,54 +38,51 @@ export default function Profile (){
                             </FiLogOut>
                         </Link>
                     </button>
-                </div>
 
-                <div className="user">
                     <div>
                         <span>Bem vindo,</span>
                         <h1>{userName}</h1>
                     </div>
-                    
+
                     <img src={userIlustration} alt="ilustração" className="userIlustration"></img>
+
                 </div>
 
             </header>
 
             <section className="perfil" >
-                <h1>Perfil</h1>
+            <h1>Perfil</h1>
                 <div className="user-info">
-                    <div className="box-name">
-                        <p>Nome:</p>
-                        <h1>{userName}</h1>
+                
+                    <div className="User-profile">
+                   
+                            <div className="box-name">
+                                <p>Nome:</p>
+                                <h2>{userName}</h2>
+                            </div>
+
+                            <div className="box-email">
+                                <p>Email:</p>
+                                <h2>{userEmail}</h2>
+                            </div>
                     </div>
 
-                    <div className="box-name">
-                        <p>Email:</p>
-                        <h1>{userEmail}</h1>
+                    <div className="background-user">
+                        <img src={imgUserInfo} alt=""></img>
                     </div>
+
                 </div>
 
-                <div className="user-info">
-                    <div className="box-name">
-                        <p>Alterar senha?</p>
-                        <input type="password" placeholder="Digite a sua nova senha"></input>
-                        <button type="submit">Solicitar alteração</button>
+                <section className="user-action">
+                <img src={userActionimg} alt="a"></img>
+                    <div className="profile-certificate">
+                        <h2>Preparado para obter seu certificado?</h2>
+                        <p>Para garantir o seu certificado é necessário alcançar</p>
+                        <p>80% de aproveitamento na prova final do curso.</p>
                     </div>
-
-                    <div className="box-name">
-                        <p>Alterar email?</p>
-                        <input type="email" placeholder="Digite o seu novo email"></input>
-                        <button type="submit">Solicitar alteração</button>
-                    </div>
-                </div>
-
-                <div className="user-info">
-                    <div className="box-name">
-                        <p>Deseja enviar sua Sugestão ou Critica?</p>
-                        <p>envie um email para testando@hotmail.com </p>
-                    </div>
-                </div>
+                </section>
             </section>
+            
         </div>
     );
 }
