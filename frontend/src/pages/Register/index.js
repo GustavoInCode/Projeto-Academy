@@ -25,7 +25,7 @@ export default function Register(){
        try{
         const response = await api.post('users', data)
 
-        alert(`Seu cadastro foi realizado com sucesso:${response.data.name}`)
+        alert(`Seu cadastro foi realizado com sucesso: ${response.data.name}`)
         localStorage.setItem('name',name);
         history.push('/');
        } catch(error){
@@ -37,12 +37,12 @@ export default function Register(){
     
     return(
         <div className="register-container">
-            <img src={imgRegister} alt=""></img>
+            <img className="rocket" src={imgRegister} alt=""></img>
             <div className="content">
                 <section>
                     <img className="logo" src={logo} alt="Logo"></img>
                     <h1>Faça o seu Cadastro</h1>
-                    <p>Registre-se para evoluir no Mundo SAP, aprenda com os melhores instrutores.</p>
+                    <h2>Registre-se para evoluir no Mundo SAP, aprenda com os melhores instrutores.</h2>
                    
                     <form onSubmit={handleRegister}>
                         <input type="text" placeholder="Seu Nome" value={name} onChange ={e => setName(e.target.value)}></input>

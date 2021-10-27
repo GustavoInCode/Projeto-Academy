@@ -5,7 +5,7 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './src/database/db.sqlite'
+      filename: './src/database/db.sql'
     },
     migrations:{
     directory:'./src/database/migrations'
@@ -30,11 +30,13 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client: 'mysql',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      host : '127.0.0.1',
+      port : 3306,
+      user:     'buywmt20_sa',
+      password: 'update',
+      database: 'buywmt20_teste'
     },
     pool: {
       min: 2,
